@@ -4,7 +4,7 @@
 @theme {
   --font-sans: Cinzel, Georgia, Cambria, "Times New Roman", serif;
   --font-display: Cinzel, Georgia, Cambria, "Times New Roman", serif;
-  --font-gothic: "UnifrakturCook", "Old English Text MT", "Blackletter", Georgia, serif;
+  --font-gothic: "Cloister Black", "CloisterBlack BT", "Cloister Black Light", "UnifrakturCook", "Old English Text MT", "Blackletter", Georgia, serif;
 }
 
 @layer base {
@@ -84,6 +84,7 @@
     transform-origin: center;
     will-change: transform;
   }
+
 }
 
 @keyframes gothic-bg-drift {
