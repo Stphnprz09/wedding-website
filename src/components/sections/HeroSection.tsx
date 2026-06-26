@@ -5,7 +5,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden px-5 pb-12 pt-20 text-center"
+      className="relative flex min-h-svh items-center justify-center overflow-hidden px-4 pb-8 pt-16 text-center sm:px-6 sm:pb-10 sm:pt-20 lg:px-8"
     >
       <div className="absolute inset-0">
         <img
@@ -19,7 +19,7 @@ export function HeroSection() {
 
       <div className="relative z-10 flex w-full max-w-4xl flex-col items-center">
         <svg
-          className="-mt-2 mb-10 h-16 w-[320px] max-w-full text-[#EBCACA] drop-shadow-[0_4px_14px_rgba(0,0,0,0.7)] sm:w-[420px]"
+          className="-mt-3 mb-5 h-auto w-[min(78vw,420px)] text-[#EBCACA] drop-shadow-[0_4px_14px_rgba(0,0,0,0.7)] sm:-mt-2 sm:mb-8"
           viewBox="0 0 420 92"
           fill="none"
           aria-hidden="true"
@@ -62,14 +62,14 @@ export function HeroSection() {
           />
         </svg>
         <p
-          className="font-display text-sm font-bold uppercase tracking-[0.38em] text-stone-100 sm:text-base"
+          className="font-display text-[clamp(0.68rem,2.5vw,1rem)] font-bold uppercase tracking-[0.28em] text-stone-100 sm:tracking-[0.38em]"
           data-reveal
           data-reveal-delay="1"
         >
           Forever starts here
         </p>
         <h1
-          className="mt-6 font-gothic text-6xl leading-none text-[#EBCACA] drop-shadow-[0_4px_18px_rgba(0,0,0,0.75)] sm:text-7xl lg:text-8xl"
+          className="mt-4 max-w-[11ch] font-gothic text-[clamp(3.4rem,13vw,6rem)] leading-[0.92] text-[#EBCACA] drop-shadow-[0_4px_18px_rgba(0,0,0,0.75)] sm:mt-6 sm:max-w-none lg:text-8xl"
           data-reveal
           data-reveal-delay="2"
         >
@@ -81,7 +81,7 @@ export function HeroSection() {
         </div>
 
         <p
-          className="mt-10 max-w-md font-display text-base font-bold uppercase leading-7 tracking-[0.24em] text-white sm:text-lg"
+          className="mt-7 max-w-[22rem] font-display text-[clamp(0.78rem,3.2vw,1.125rem)] font-bold uppercase leading-7 tracking-[0.16em] text-white sm:mt-10 sm:max-w-md sm:tracking-[0.24em]"
           data-reveal
           data-reveal-delay="4"
         >
