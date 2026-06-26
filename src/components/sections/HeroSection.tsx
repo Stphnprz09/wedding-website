@@ -1,58 +1,92 @@
-import heroImg from '../../assets/hero.png'
-import { SectionKicker } from '../ui/SectionKicker'
+import cathedralBg from '../../assets/gothic-cathedral.png'
+import { EnvelopeButton } from '../ui/EnvelopeButton'
 
 export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative z-10 mx-auto grid min-h-[calc(100vh-88px)] w-full max-w-6xl items-center gap-10 px-5 pb-16 pt-6 sm:px-8 lg:grid-cols-[1.05fr_0.95fr]"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden px-5 pb-12 pt-20 text-center"
     >
-      <div className="max-w-2xl">
-        <SectionKicker>Together with their families</SectionKicker>
-        <h1 className="mt-5 font-serif text-6xl leading-[0.95] text-[#25211f] sm:text-7xl lg:text-8xl">
-          Stephen & Happy
-        </h1>
-        <p className="mt-7 max-w-xl text-lg leading-8 text-[#5d5650]">
-          We are celebrating a lifetime promise with the people who made the
-          journey beautiful. Join us for an intimate garden ceremony, dinner,
-          music, and a night worth remembering.
-        </p>
-        <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-          <a
-            href="#rsvp"
-            className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#2f4f46] px-7 text-sm font-bold uppercase tracking-[0.18em] text-white shadow-lg shadow-[#2f4f46]/20 transition hover:-translate-y-0.5 hover:bg-[#263f38]"
-          >
-            RSVP Now
-          </a>
-          <a
-            href="#schedule"
-            className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#9a6f4d]/40 bg-white/55 px-7 text-sm font-bold uppercase tracking-[0.18em] text-[#5a4332] transition hover:-translate-y-0.5 hover:border-[#9a6f4d]"
-          >
-            View Details
-          </a>
-        </div>
-      </div>
-
-      <div
-        className="glass-panel relative min-h-[520px] overflow-hidden rounded-[2rem] p-6"
-        aria-label="Wedding invitation feature"
-      >
-        <div className="absolute inset-x-6 top-6 flex justify-between text-xs font-bold uppercase tracking-[0.22em] text-[#9a6f4d]">
-          <span>June 14</span>
-          <span>Garden Estate</span>
-        </div>
-        <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#e8b9b1]/45 blur-3xl" />
+      <div className="absolute inset-0">
         <img
-          src={heroImg}
-          className="absolute left-1/2 top-1/2 w-64 -translate-x-1/2 -translate-y-1/2 drop-shadow-[0_32px_50px_rgba(47,44,42,0.18)] sm:w-80"
+          src={cathedralBg}
+          className="gothic-bg-drift h-full w-full object-cover opacity-70"
           alt=""
         />
-        <div className="absolute inset-x-6 bottom-6 rounded-3xl bg-[#25211f]/90 p-6 text-white">
-          <p className="font-serif text-4xl">Save the date</p>
-          <p className="mt-3 text-sm leading-6 text-white/70">
-            Ceremony at three in the afternoon, reception immediately following.
-          </p>
+        <div className="gothic-vignette absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(80,45,50,0.18),rgba(0,0,0,0.78)_72%)]" />
+        <div className="absolute inset-0 bg-[#3a1720]/25 mix-blend-multiply" />
+      </div>
+
+      <div className="relative z-10 flex w-full max-w-4xl flex-col items-center">
+        <svg
+          className="-mt-2 mb-10 h-16 w-[320px] max-w-full text-[#EBCACA] drop-shadow-[0_4px_14px_rgba(0,0,0,0.7)] sm:w-[420px]"
+          viewBox="0 0 420 92"
+          fill="none"
+          aria-hidden="true"
+          data-reveal
+        >
+          <path
+            d="M13 30c39 0 65 10 89 28 20 15 42 21 69 7 15-8 24-22 20-35-3-10-16-13-24-6-8 8-4 23 8 21 8-2 12-9 9-16"
+            stroke="currentColor"
+            strokeWidth="5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M407 30c-39 0-65 10-89 28-20 15-42 21-69 7-15-8-24-22-20-35 3-10 16-13 24-6 8 8 4 23-8 21-8-2-12-9-9-16"
+            stroke="currentColor"
+            strokeWidth="5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M144 36c-20-18-45-9-46 9-1 17 24 19 28 4M276 36c20-18 45-9 46 9 1 17-24 19-28 4"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+          />
+          <path
+            d="M210 24c10 14 25 22 42 24-17 4-30 13-42 27-12-14-25-23-42-27 17-2 32-10 42-24Z"
+            fill="currentColor"
+            opacity="0.75"
+          />
+          <path
+            d="M210 13c6 9 12 15 21 20-10-1-17-5-21-12-4 7-11 11-21 12 9-5 15-11 21-20ZM210 79c-6-9-12-15-21-20 10 1 17 5 21 12 4-7 11-11 21-12-9 5-15 11-21 20Z"
+            fill="currentColor"
+            opacity="0.9"
+          />
+          <circle cx="210" cy="46" r="5" fill="currentColor" />
+          <path
+            d="M118 15c11-12 30-8 34 7M302 15c-11-12-30-8-34 7M103 67c-14 2-26-4-33-15M317 67c14 2 26-4 33-15"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+          />
+        </svg>
+        <p
+          className="font-display text-sm font-bold uppercase tracking-[0.38em] text-stone-100 sm:text-base"
+          data-reveal
+          data-reveal-delay="1"
+        >
+          Forever starts here
+        </p>
+        <h1
+          className="mt-6 font-gothic text-6xl leading-none text-[#EBCACA] drop-shadow-[0_4px_18px_rgba(0,0,0,0.75)] sm:text-7xl lg:text-8xl"
+          data-reveal
+          data-reveal-delay="2"
+        >
+          Gabriel and Lorraine
+        </h1>
+
+        <div data-reveal data-reveal-delay="3" className="w-full">
+          <EnvelopeButton href="/invitation" />
         </div>
+
+        <p
+          className="mt-10 max-w-md font-display text-base font-bold uppercase leading-7 tracking-[0.24em] text-white sm:text-lg"
+          data-reveal
+          data-reveal-delay="4"
+        >
+          Click to open your invitation... if you dare
+        </p>
       </div>
     </section>
   )
